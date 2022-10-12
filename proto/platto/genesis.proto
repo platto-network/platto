@@ -1,0 +1,14 @@
+syntax = "proto3";
+package plattonetwork.platto.platto;
+
+import "gogoproto/gogo.proto";
+import "platto/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/platto-network/platto/x/platto/types";
+
+// GenesisState defines the platto module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

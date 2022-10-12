@@ -1,0 +1,12 @@
+syntax = "proto3";
+package plattonetwork.platto.platto;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/platto-network/platto/x/platto/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
